@@ -1,0 +1,154 @@
+/*
+ * Hoja de estilos de la aplicacion de gestion de inmuebles.
+ */
+
+/* ---------- Base ---------- */
+
+.root {
+    -fx-background-color: #eef2f7;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Barra superior ---------- */
+
+.barra-titulo {
+    -fx-background-color: linear-gradient(to right, #1b2838, #2c3e50);
+    -fx-padding: 16 24 16 24;
+}
+
+.titulo-app {
+    -fx-text-fill: white;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo-app {
+    -fx-text-fill: #9fb3c8;
+    -fx-font-size: 12px;
+}
+
+/* ---------- Panel del formulario ---------- */
+
+.panel-formulario,
+.panel-formulario > .viewport {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+/* ---------- Tarjetas ---------- */
+
+.tarjeta {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 10, 0, 0, 3);
+}
+
+.titulo-seccion {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Formulario ---------- */
+
+.etiqueta-campo {
+    -fx-text-fill: #34495e;
+    -fx-font-size: 12px;
+}
+
+.text-field {
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #d5dbe1;
+    -fx-background-color: #fbfcfd;
+    -fx-padding: 7 10 7 10;
+    -fx-font-size: 12px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2980b9;
+    -fx-background-color: white;
+}
+
+.text-field:disabled {
+    -fx-background-color: #eceff1;
+    -fx-opacity: 0.85;
+}
+
+.combo-box, .date-picker {
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+}
+
+.check-box {
+    -fx-text-fill: #34495e;
+    -fx-font-size: 12px;
+}
+
+/* ---------- Botones ---------- */
+
+.boton {
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 8 14 8 14;
+    -fx-cursor: hand;
+}
+
+.boton-primario { -fx-background-color: #2980b9; }
+.boton-primario:hover { -fx-background-color: #2471a3; }
+
+.boton-advertencia { -fx-background-color: #d68910; }
+.boton-advertencia:hover { -fx-background-color: #b9770e; }
+
+.boton-peligro { -fx-background-color: #c0392b; }
+.boton-peligro:hover { -fx-background-color: #a93226; }
+
+.boton-secundario { -fx-background-color: #7f8c8d; }
+.boton-secundario:hover { -fx-background-color: #707b7c; }
+
+/* ---------- Tabla ---------- */
+
+.table-view {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #d5dbe1;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2c3e50;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d6eaf8;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #1b2838;
+}
+
+/* ---------- Mensajes ---------- */
+
+.mensaje {
+    -fx-font-size: 12px;
+    -fx-padding: 8 12 8 12;
+    -fx-background-radius: 6;
+}
+
+.mensaje-ok {
+    -fx-text-fill: #1e8449;
+    -fx-background-color: #e9f7ef;
+}
+
+.mensaje-error {
+    -fx-text-fill: #922b21;
+    -fx-background-color: #fdedec;
+}
